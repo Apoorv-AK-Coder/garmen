@@ -91,18 +91,34 @@ h4 {
 
 a {
     color: var(--fifth-color);
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
 }
 
 button {
     font-family: var(--secondary-font);
     line-height: 2;
-    font-size: 17px;
-    font-weight: 700;
-    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 11px 0;
     padding: 0;
-    padding: 5px 30px;
+    padding: 10px 25px;
     border-radius: 5px;
+    border: none;
+    color: var(--fifth-color);
+}
+
+.button1 {
+    background-color: var(--secondary-color);
+}
+
+.button1:hover {
+    background-color: var(--third-color);
+    cursor: pointer;
 }
 
 .gap
@@ -145,7 +161,7 @@ button {
 }
 
 .head img {
-    height: 60px;
+    height: 75px;
     margin: 0;
     padding: 0;
 }
@@ -163,4 +179,24 @@ button {
 }
 
 /*Footer Ends Here*/
+
+/* navigation start here*/
+
+nav ul li {
+    color: var(--fifth-color);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    list-style: none;
+    padding: 0 20px;
+    margin: 0 10px;
+    line-height: 2;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+/* navigation ends here*/
 

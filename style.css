@@ -80,11 +80,11 @@ h3 {
 }
 
 h4 {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
-    margin: 0;
+    margin: 15px 0 10px 0;
     padding: 0;
     color: var(--fifth-color);
 }
@@ -170,12 +170,49 @@ button {
 
 /*Footer Starts Here*/
 
-.bottom {
+.footer {
     width: 1280px;
     margin: auto;
-    padding: 10px 0;
+    padding: 6% 0;
+}
+
+.col {flex: 1;}
+
+.footer .column p {color: var(--fifth-color); line-height: 1.5;}
+.footer .column img {width: 275px;}
+
+.socialmedia i {
+    color: var(--fifth-color) !important;
+    background-color: var(--secondary-color);
+    font-size: 18px !important;
+    margin: 15px 10px 0 0;
+    border-radius: 100%;
+    padding: 10px 10px;
+}
+
+.socialicon i:hover {
+    background-color: var(--third-color) !important;
+    cursor: pointer;
+}
+
+.arrow i {
+    color: var(--secondary-color);
+    font-size: 18px;
+    line-height: 1.2;
+    margin-right: 15px;
+}
+
+.arrow .column {
+    padding: 5px 0;
+}
+
+.foot {
+    color: var(--fifth-color);
     text-align: center;
-    color: var(--fourth-color);
+    padding: 15px;
+    border-top: 2px solid var(--secondary-color);
+    max-width: 1280px;
+    margin: auto;
 }
 
 /*Footer Ends Here*/

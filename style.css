@@ -13,7 +13,7 @@ rgb(166, 88, 124);
 rgb(125, 64, 92); */
 
 :root {
-    --primary-color: #1d2f40; 
+    --primary-color: #1d2f40;
     --secondary-color: #a6587c;
     --third-color: #7D405C;
     --fourth-color: #141414;
@@ -44,7 +44,29 @@ rgb(125, 64, 92); */
 p {
     font-family: var(--secondary-font);
     line-height: 2;
-    font-size: 16px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+para {
+    color: var(--third-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-family: var(--secondary-font);
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+}
+
+para1 {
+    color: var(--third-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: var(--secondary-font);
+    line-height: 2;
     margin: 0;
     padding: 0;
 }
@@ -63,17 +85,17 @@ h2 {
     font-family: var(--primary-font);
     line-height: 1.5;
     font-size: 55px;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
     padding: 0;
-    color: var(--fourth-color);
+    color: var(--primary-color);
 }
 
 h3 {
     font-family: var(--primary-font);
     line-height: 1.5;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 23px;
+    font-weight: 700;
     margin: 0;
     padding: 0;
     color: var(--fifth-color);
@@ -121,9 +143,8 @@ button {
     cursor: pointer;
 }
 
-.gap
-{
-	gap:20px;
+.gap {
+    gap: 20px;
 }
 
 /*Header starts here*/
@@ -132,13 +153,17 @@ button {
     width: 1280px;
     margin: auto;
     padding: 10px 0;
-}
-
-.head .column i {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-right: 10px;
-    color: var(--secondary-color);
+    i {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-right: 10px;
+        color: var(--secondary-color);
+    }
+    img {
+        height: 75px;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .head p {
@@ -160,12 +185,6 @@ button {
     cursor: pointer;
 }
 
-.head img {
-    height: 75px;
-    margin: 0;
-    padding: 0;
-}
-
 /*Header ends here*/
 
 /*Footer Starts Here*/
@@ -176,10 +195,18 @@ button {
     padding: 6% 0;
 }
 
-.col {flex: 1;}
+.col {
+    flex: 1;
+}
 
-.footer .column p {color: var(--fifth-color); line-height: 1.5;}
-.footer .column img {width: 275px;}
+.footer .column p {
+    color: var(--fifth-color);
+    line-height: 1.5;
+}
+
+.footer .column img {
+    width: 275px;
+}
 
 .socialmedia i {
     color: var(--fifth-color) !important;
@@ -236,4 +263,70 @@ nav ul {
 }
 
 /* navigation ends here*/
+
+
+.info i {
+    /* line-height: 1.5; */
+    color: var(--secondary-color);
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.info {
+    margin: 20px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.blog .column {
+    padding: 20px 30px;
+}
+
+.blog {
+    width: 25%;
+    border-radius: 10px;
+    margin: 30px 0;
+    background-color: var(--primary-color);
+
+    p {
+        color: var(--fifth-color) !important;
+        line-height: 1.7;
+        margin-right: 15px;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex {
+        padding: 10px 0;
+
+        i {
+            color: var(--fifth-color);
+            line-height: 1.7;
+            margin-right: 10px;
+        }
+    }
+}
+
+.faq {
+    background-color: var(--primary-color);
+    h2, p {
+        color: var(--fifth-color);
+    }
+    .column {
+        flex: 1;
+    }
+    .faqsec {
+        padding: 20px;
+        border: 1px solid var(--fifth-color);
+        border-radius: 10px;
+        margin: 0 0 15px 0;
+    }
+}
 

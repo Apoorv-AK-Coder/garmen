@@ -1,5 +1,5 @@
 /* Global CSS Starts Here*/
-@import url('https://fonts.googleapis.com/css2?family=Yantramanav');
+@import url('https://fonts.googleapis.com/css2?family=Nunito Sans');
 @import url('https://fonts.googleapis.com/css2?family=Fira Sans');
 
 * {
@@ -18,14 +18,13 @@ rgb(125, 64, 92); */
     --third-color: #7D405C;
     --fourth-color: #141414;
     --fifth-color: #ffffff;
-    --six-color: #757575;
     /*fonts*/
     --primary-font: Fira Sans;
-    --secondary-font: Yantramanav;
+    --secondary-font: Nunito Sans;
 }
 
 .row {
-    width: 1280px;
+    width: 1200px;
     margin: auto;
     padding: 6% 0;
 }
@@ -45,7 +44,7 @@ rgb(125, 64, 92); */
 p {
     font-family: var(--secondary-font);
     line-height: 2;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     color: var(--six-color);
@@ -128,12 +127,11 @@ button {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
-    margin: 11px 0;
-    padding: 0;
     padding: 10px 25px;
     border-radius: 5px;
     border: none;
     color: var(--fifth-color);
+    cursor: pointer;
 }
 
 .button1 {
@@ -142,7 +140,6 @@ button {
 
 .button1:hover {
     background-color: var(--third-color);
-    cursor: pointer;
 }
 
 .gap {
@@ -151,40 +148,69 @@ button {
 
 /*Header starts here*/
 
+.container1 {
+    background-color: var(--fifth-color);
+}
+
+.container2 {
+    background-color: var(--primary-color);
+
+    .column {
+        margin: auto;
+    }
+
+    .button {
+        text-align: right;
+    }
+
+    i {
+        color: var(--fifth-color) !important;
+    }
+
+    .navbar i {
+        display: none;
+    }
+
+    .navicon {
+        display: none;
+    }
+}
+
 .head {
-    width: 1280px;
+    width: 1200px;
     margin: auto;
     padding: 10px 0;
+
     i {
         font-size: 20px;
         line-height: 1.5;
         margin-right: 10px;
         color: var(--secondary-color);
     }
+
     img {
         height: 75px;
         margin: 0;
         padding: 0;
     }
-}
 
-.head p {
-    font-size: 20px;
-    line-height: 1.5;
-}
+    .social {
+        margin: auto 0 auto auto;
+        gap: 10px;
 
-.socialicon i {
-    color: var(--fifth-color) !important;
-    background-color: var(--secondary-color);
-    font-size: 15px !important;
-    float: right;
-    border-radius: 100%;
-    padding: 6px 10px;
-}
+        i {
+            background-color: var(--secondary-color);
+            color: var(--fifth-color);
+            padding: 2px 7px;
+            margin: 0;
+            border-radius: 100%;
+        }
 
-.socialicon i:hover {
-    background-color: var(--third-color) !important;
-    cursor: pointer;
+        i:hover {
+            background-color: var(--third-color) !important;
+            cursor: pointer;
+        }
+    }
 }
 
 /*Header ends here*/
@@ -318,12 +344,16 @@ nav ul {
 
 .faq {
     background-color: var(--primary-color);
-    h2, p {
+
+    h2,
+    p {
         color: var(--fifth-color);
     }
+
     .column {
         flex: 1;
     }
+
     .faqsec {
         padding: 20px;
         border: 1px solid var(--fifth-color);
@@ -345,7 +375,7 @@ nav ul {
     width: 25%;
     border-radius: 10px;
     margin: 30px 0;
-    
+
     .column {
         background-color: var(--primary-color);
         padding: 30px;
@@ -385,6 +415,7 @@ nav ul {
 
 .step {
     margin: 15px 0;
+
     img {
         width: 100px;
         padding: 20px;

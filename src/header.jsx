@@ -38,12 +38,22 @@ export default function Header() {
                     </div>
                     <div className="column navbar">
                         <i className="fa-solid fa-xmark"></i>
+                        <nav>
+                            <ul>
+                                <a><li>Home</li></a>
+                                <a><li>About Us</li></a>
+                                <a><li>Services</li></a>
+                                <a><li>Projects</li></a>
+                                <a><li>Pages</li></a>
+                                <a><li>Contact</li></a>
+                            </ul>
+                        </nav>
                     </div>
                     <div className="column navicon">
                         <i className="fa-solid fa-bars"></i>
                     </div>
                     <div className="column button">
-                        <button className='button1'>Make Project</button>
+                        <button className='button1'>MAKE PROJECT</button>
                     </div>
                 </div>
             </div>

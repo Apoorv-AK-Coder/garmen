@@ -19,5 +19,8 @@
     "vite": "^4.3.9"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "main": "calling.js",
+  "author": "",
+  "license": "ISC"
 }
